@@ -12,10 +12,10 @@ export default function Home() {
           <div className="h-full flex items-center justify-center text-white px-4">
             <div className="text-center space-y-8 max-w-4xl mx-auto relative z-20">
               <h1 className="text-6xl md:text-8xl font-bold font-serif tracking-tight animate-fade-in drop-shadow-2xl">
-                FASHION FORWARD
+                Elevate Every Moment with ZAYRA
               </h1>
               <p className="text-xl md:text-2xl font-light tracking-wider uppercase text-white drop-shadow-lg">
-                Elevate Your Style Journey
+                Bold looks for bright minds—comfort meets cool
               </p>
               <div className="flex gap-6 justify-center mt-8">
                 <button className="px-8 py-4 bg-gradient-to-r from-pink-500 to-orange-400 hover:from-pink-600 hover:to-orange-500 text-white transition duration-300 text-lg uppercase tracking-wider rounded-lg transform hover:scale-105 shadow-xl">

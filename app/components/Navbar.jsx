@@ -15,7 +15,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-12">
-              <Link href="/" className="text-2xl font-serif">LUXE</Link>
+              <Link href="/" className="text-2xl font-serif">ZAYRA</Link>
               <div className="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
                 <Link href="/products?category=Women" className="hover:text-gray-300 transition">Women</Link>
                 <Link href="/products?category=Men" className="hover:text-gray-300 transition">Men</Link>
