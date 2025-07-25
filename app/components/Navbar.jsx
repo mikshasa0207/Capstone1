@@ -32,7 +32,7 @@ export default function Navbar() {
     <nav className="absolute top-0 left-0 right-0 z-30 text-white">
       <div className="max-w-7xl mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
-          {/* Logo & Links */}
+ 
           <div className="flex items-center space-x-12">
             <Link href="/" className="text-3xl font-serif">Zayra</Link>
             <div className="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
@@ -43,7 +43,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* Actions */}
+
           <div className="flex items-center space-x-6">
             <button 
               onClick={() => setIsSearchOpen(!isSearchOpen)} 
@@ -97,7 +97,6 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Search Modal */}
         {isSearchOpen && (
           <div className="absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md shadow-lg rounded-b-2xl p-4 mt-2">
             <form onSubmit={handleSearch} className="flex gap-2">
