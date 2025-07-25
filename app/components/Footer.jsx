@@ -5,6 +5,7 @@ export default function Footer() {
     <footer className="bg-gradient-to-br from-purple-900 via-pink-900 to-orange-900 text-white">
       <div className="max-w-7xl mx-auto py-16 px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
+          
           {/* Brand Section */}
           <div className="space-y-4">
             <h2 className="text-2xl font-serif">ZAYRA</h2>
