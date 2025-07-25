@@ -42,7 +42,7 @@ export default function SignInPage() {
           Welcome Back
         </h1>
         <p className="mt-2 text-center text-base text-gray-200 font-medium">
-          Don’t have an account?{' '}
+          Dont have an account?{' '}
           <a
             href="/auth/signup"
             className="text-white-300 font-semibold hover:underline"

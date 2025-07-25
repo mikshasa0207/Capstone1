@@ -3,7 +3,7 @@
 import { useCart } from '../context/CartContext';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import moveToWishlist from '../context/CartContext'
+import moveToWishlist from '../context/CartContext' 
 
 export default function CartPage() {
   const { cart, removeFromCart , moveToWishlist} = useCart();

@@ -83,21 +83,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Newsletter */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4 text-pink-200">Stay Updated</h3>
-            <p className="text-gray-300 text-sm mb-4">Subscribe to get special offers and updates</p>
-            <div className="flex">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="bg-purple-800/50 text-white placeholder-gray-400 px-4 py-2 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-pink-400 w-full"
-              />
-              <button className="bg-gradient-to-r from-pink-500 to-orange-400 px-4 py-2 rounded-r-lg hover:from-pink-600 hover:to-orange-500 transition duration-300">
-                Join
-              </button>
-            </div>
-          </div>
         </div>
 
         {/* Bottom Bar */}
