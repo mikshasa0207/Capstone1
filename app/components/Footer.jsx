@@ -1,11 +1,13 @@
+import Link from 'next/link';
+
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-br from-purple-900 via-pink-900 to-orange-900 text-white">
       <div className="max-w-7xl mx-auto py-16 px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
-
+          {/* Brand Section */}
           <div className="space-y-4">
-            <h2 className="text-2xl font-serif">LUXE</h2>
+            <h2 className="text-2xl font-serif">ZAYRA</h2>
             <p className="text-gray-300 text-sm leading-relaxed">
               Discover the latest trends in fashion and explore our curated collection of clothing and accessories.
             </p>
@@ -27,26 +29,60 @@ export default function Footer() {
               </a>
             </div>
           </div>
+
+          {/* Quick Links */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-pink-200">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-pink-400 transition-colors">New Arrivals</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-pink-400 transition-colors">Best Sellers</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-pink-400 transition-colors">Sale</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-pink-400 transition-colors">Collections</a></li>
+              <li>
+                <Link href="/#new-arrivals" className="text-gray-300 hover:text-pink-400 transition-colors">
+                  New Arrivals
+                </Link>
+              </li>
+              <li>
+                <Link href="/" className="text-gray-300 hover:text-pink-400 transition-colors">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/products?category=Clothing" className="text-gray-300 hover:text-pink-400 transition-colors">
+                  Clothing
+                </Link>
+              </li>
+              <li>
+                <Link href="/products?category=Accessories" className="text-gray-300 hover:text-pink-400 transition-colors">
+                  Accessories
+                </Link>
+              </li>
+              <li>
+                <Link href="/products?category=KIDS" className="text-gray-300 hover:text-pink-400 transition-colors">
+                  Kids
+                </Link>
+              </li>
+              <li>
+                <Link href="/products?category=Footwear" className="text-gray-300 hover:text-pink-400 transition-colors">
+                  Footwear
+                </Link>
+              </li>
             </ul>
           </div>
 
+          {/* Help */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-pink-200">Help</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-pink-400 transition-colors">Contact Us</a></li>
+              <li>
+                <Link href="/#contact-us" className="text-gray-300 hover:text-pink-400 transition-colors">
+                  Contact Us
+                </Link>
+              </li>
               <li><a href="#" className="text-gray-300 hover:text-pink-400 transition-colors">Shipping Info</a></li>
               <li><a href="#" className="text-gray-300 hover:text-pink-400 transition-colors">Returns</a></li>
               <li><a href="#" className="text-gray-300 hover:text-pink-400 transition-colors">FAQ</a></li>
             </ul>
           </div>
 
+          {/* Newsletter */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-pink-200">Stay Updated</h3>
             <p className="text-gray-300 text-sm mb-4">Subscribe to get special offers and updates</p>
@@ -63,8 +99,9 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Bottom Bar */}
         <div className="border-t border-purple-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-          <p>© 2024 LUXE. All rights reserved.</p>
+          <p>© 2025 ZAYRA. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-pink-400 transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-pink-400 transition-colors">Terms of Service</a>

@@ -17,7 +17,7 @@ export default function ImageCarousel() {
       setCurrentIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000); 
+    }, 4000); // Change every 4s
     return () => clearInterval(interval);
   }, []);
 
@@ -40,7 +40,7 @@ export default function ImageCarousel() {
                 backgroundSize: 'cover'
               }}
             />
-            <div className="absolute inset-0 bg-black/60" /> 
+            <div className="absolute inset-0 bg-black/60" /> {/* Increased overlay opacity */}
           </div>
         ))}
       </div>

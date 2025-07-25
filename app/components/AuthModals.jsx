@@ -12,6 +12,7 @@ export default function AuthModals({ isOpen, onClose, initialMode = 'signin' }) 
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // Handle authentication logic here
     console.log(formData);
   };
 
