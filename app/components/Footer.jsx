@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto py-16 px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
           
-          {/* Brand Section */}
+          {/* Brand vala Section */}
           <div className="space-y-4">
             <h2 className="text-2xl font-serif">ZAYRA</h2>
             <p className="text-gray-300 text-sm leading-relaxed">
@@ -68,7 +68,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Help */}
+          {/* Help sec */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-pink-200">Help</h3>
             <ul className="space-y-2">
@@ -85,7 +85,7 @@ export default function Footer() {
 
         </div>
 
-        {/* Bottom Bar */}
+        {/*last ek dam  */}
         <div className="border-t border-purple-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
           <p>© 2025 ZAYRA. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">

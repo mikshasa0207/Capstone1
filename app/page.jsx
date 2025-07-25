@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ImageCarousel from './components/ImageCarousel';
 import { useCart } from './context/CartContext';
-import { FaHeart, FaArrowRight } from 'react-icons/fa';
+import { FaHeart } from 'react-icons/fa';
 import Link from 'next/link';
 import { useState } from 'react';
 import { toast } from 'react-hot-toast';

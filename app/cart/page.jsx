@@ -2,8 +2,7 @@
 
 import { useCart } from '../context/CartContext';
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import moveToWishlist from '../context/CartContext' 
+import Footer from '../components/Footer'; 
 
 export default function CartPage() {
   const { cart, removeFromCart , moveToWishlist} = useCart();
