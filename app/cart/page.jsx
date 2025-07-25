@@ -3,9 +3,10 @@
 import { useCart } from '../context/CartContext';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import moveToWishlist from '../context/CartContext'
 
 export default function CartPage() {
-  const { cart, removeFromCart } = useCart();
+  const { cart, removeFromCart , moveToWishlist} = useCart();
 
   const calculateTotal = () => {
     return cart.reduce((total, item) => total + item.price, 0);
@@ -44,7 +45,7 @@ export default function CartPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                     </svg>
                   </button>
-                  // In the cart item component, add this button next to the remove button:
+
                   <button
                     onClick={() => moveToWishlist(item)}
                     className="p-2 text-violet-500 hover:bg-violet-50 rounded-full"

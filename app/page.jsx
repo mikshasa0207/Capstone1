@@ -7,6 +7,7 @@ import { useCart } from './context/CartContext';
 import { FaHeart, FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
 import { useState } from 'react';
+import { toast } from 'react-hot-toast';
 
 export default function Home() {
   const { addToCart, addToWishlist, removeFromWishlist, wishlist } = useCart();
@@ -236,9 +237,36 @@ export default function Home() {
           </h2>
           <p className="text-lg text-gray-600">We'd love to hear from you. Send us a message!</p>
           
-          <form action="https://formspree.io/f/xldlbgdq"
-            method="POST"
-            className="space-y-6 text-left">
+          <form 
+            className="space-y-6 text-left"
+            onSubmit={async (e) => {
+              e.preventDefault();
+              const formData = new FormData(e.target);
+              try {
+                const response = await fetch('https://formspree.io/f/xldlbgdq', {
+                  method: 'POST',
+                  body: formData,
+                  headers: {
+                    'Accept': 'application/json'
+                  }
+                });
+                if (response.ok) {
+                  toast.success('Message sent successfully!');
+                  // Reset form
+                  e.target.reset();
+                  // Redirect to home page after a short delay
+                  setTimeout(() => {
+                    window.location.href = '/';
+                  }, 2000);
+                } else {
+                  toast.error('Failed to send message. Please try again.');
+                }
+              } catch (error) {
+                toast.error('An error occurred. Please try again later.');
+              }
+            }}
+          >
+            {/* Form fields remain the same */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
